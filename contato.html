@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Antônio's Barbershop</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background-color:#f5f5f5;">
+<header>
+    <div class="caixa">
+        <h1><img src="logo.jpg" class="logo-cabecalho" alt="Logo da Barbearia Alura"></h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="servicos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main style="background-color:#f5f5f5;">
+
+    <section class="principal">
+        <h2 class="titulo-principal">Agende aqui o seu horário</h2>
+        </br>
+        <img class="utensiliosContato" src="agendamento.png" alt="Utensilios de um Barbeiro">
+        <p><strong>WK Barbearia</strong> qualidade que você já conhece!</p>
+    </section>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Segunda</td>
+            <td>Das 8:30h às 16:30h</td>
+        </tr>
+        <tr>
+            <td>Terça</td>
+            <td>Das 8:30h às 16:30h</td>
+        </tr>
+        <tr>
+            <td>Quarta</td>
+            <td>Das 8:30h às 18:30h</td>
+        </tr>
+        <tr>
+            <td>Quinta</td>
+            <td>Das 8:30h às 16:30h</td>
+        </tr>
+        <tr>
+            <td>Sexta</td>
+            <td>Das 8:30h às 18:30h</td>
+        </tr>
+        <tr>
+            <td>Sábado</td>
+            <td>Das 8:30h às 18:30h</td>
+        </tr>
+        <tr>
+            <td>Domingo</td>
+            <td>Fechado</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <form form action="https://formsubmit.co/andersonmatte_18@hotmail.com" method="POST">
+
+        <label for="nomesobrenome">Nome e Sobrenome</label>
+        </br>
+        <input type="text" name="Nome e Sobrenome" id="nomesobrenome" class="input-padrao" required>
+        </br>
+        <label for="email">Email</label>
+        </br>
+        <input type="email" name="Email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+        </br>
+        <label for="telefone">Celular ou WhatsApp</label>
+        </br>
+        <input pattern="^\d{2}\d{5}\d{4}$" type="tel" name="Telefone ou Whatsapp" id="telefone" class="input-padrao"
+               required placeholder="(XX) XXXXX-XXXX"
+               oninvalid="this.setCustomValidity('Digite o DDD com 2 números e os 9 números do celular')"
+               onkeyup="setCustomValidity('')">
+        </br>
+        <label for="mensagem">Mensagem</label>
+        </br>
+        <textarea type="mensagem" name="Mensagem" cols="70" rows="10" id="mensagem" class="input-padrao"
+                  required></textarea>
+        </br>
+        <fieldset class="prefere-contato">
+            <legend>Como prefere o nosso contato?</legend>
+            <label for="radio-email"><input type="radio" name="prefere-contato" value="email"
+                                            id="radio-email">Email</label>
+
+            <label for="radio-telefone"><input type="radio" name="prefere-contato" value="telefone"
+                                               id="radio-telefone">Telefone</label>
+
+            <label for="radio-whatsapp"><input type="radio" name="prefere-contato" value="whatsapp"
+                                               id="radio-whatsapp" checked>Whatsapp</label>
+        </fieldset>
+        </br>
+        <fieldset>
+            <legend>Qual horário prefere ser atendido?</legend>
+            <select class="custom-select" style="width:200px;">
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox" name="Receber Novidades" checked> Gostaria de receber nossas
+            novidades por
+            email?</label>
+
+        <input type="submit" value="Enviar formulário" class="enviar">
+    </form>
+
+</main>
+
+
+<footer>
+    <h1><img src="logo.jpg" class="logo-cabecalho"></h1>
+    <p class="copyright">Av. Vicente Monteggia Nº 2432 - Cavalhada - Porto Alegre/RS</p>
+    <p class="copyright"><img src="whatsapp.png" style="padding-left:5px;"> WhatsApp (51) 98445-1548</p>
+    <p class="copyright">&copy; Copyright WK Barbearia - 2022</p>
+</footer>
+
+</body>
+
+</html>
